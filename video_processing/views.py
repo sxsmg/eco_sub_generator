@@ -8,12 +8,6 @@ from .tasks import extract_subtitles
 import os
 from mongoengine import connect
 
-###mongo_pass_key = os.environ.get('MONGO_PASS_KEY')
-###MONGODB_CONNECTION_STRING = f'mongodb+srv://thesgadyal:#Sg864501@cluster0.2k0hy0v.mongodb.net/test?retryWrites=true&w=majority'
-
-# Connect to MongoDB
-###connect(host=MONGODB_CONNECTION_STRING)
-###
 
 def upload_video(request):
     if request.method == 'POST':
