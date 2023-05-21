@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'ecowiser.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
-mongo_pass_key = os.environ.get(MONGO_PASS_KEY)
+mongo_pass_key = os.environ.get('MONGO_PASS_KEY')
 MONGODB_CONNECTION_STRING = f'mongodb+srv://thesgadyal:{mongo_pass_key}@cluster0.2k0hy0v.mongodb.net/test?retryWrites=true&w=majority'
 connect(host=MONGODB_CONNECTION_STRING)
 
