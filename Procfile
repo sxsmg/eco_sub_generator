@@ -1,0 +1,1 @@
+web: gunicorn ecowiser.wsgi --log-file -
